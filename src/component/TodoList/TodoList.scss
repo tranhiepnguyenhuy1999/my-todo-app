@@ -1,0 +1,25 @@
+.todo{
+    background: black;
+
+
+    &-content{
+        background: lightgray;
+        height: 400px;
+
+        overflow: hidden;
+        overflow-y: scroll;
+
+
+        &-item{
+            background: lightskyblue;
+            width: 100%;
+            margin: 0.5em 0 !important;
+        }
+    }
+    &-tilte{
+        color: white;
+    }
+}
+.checked {
+    text-decoration: line-through;
+}
