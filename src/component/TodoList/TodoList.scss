@@ -1,6 +1,8 @@
 .todo{
     background: black;
+    border-radius: 5px;
 
+    position: relative;
 
     &-content{
         background: lightgray;
@@ -9,17 +11,70 @@
         overflow: hidden;
         overflow-y: scroll;
 
+       
 
         &-item{
-            background: lightskyblue;
+            background:#87b5fa;
             width: 100%;
             margin: 0.5em 0 !important;
+
+             transition: all 0.1s ;
+            &:hover {
+                background: lightskyblue; 
+            }
         }
     }
-    &-tilte{
+    &-total{
+       position: absolute;
+       top: 0;
+       left: 101%;
+       
+
+       padding: 1em;
+
+       color: white;
+       background: black ;
+
+        &-work{
+            position: relative;
+            width: 100%;
+            height: 5px;
+
+            padding: 0 !important;
+
+            &-all
+            {
+                width: 100%;
+                height: 100%;
+                background: white;
+
+            }
+
+            &-done{
+                position: absolute;
+                top:0;
+                left: 0;
+
+                height: 100%;
+
+                background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+            }
+        }
+     }
+
+     &-congra{
+        position: absolute;
+        top: 0;
+        right: 101%; 
+
+        background: black;
         color: white;
+        
+        transition: all 0.3s ease-in;
     }
+    
 }
 .checked {
     text-decoration: line-through;
+    color: white;
 }

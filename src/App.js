@@ -7,7 +7,7 @@ import {Container, Row} from 'react-bootstrap'
 function App() {
   return (
     <Container className='mt-5'>
-      <h1>This is the to do app</h1>
+      <h1 className='text-center'>TO DO APP</h1>
       <Row className='justify-content-center'>
         <TodoList ></TodoList>
       </Row>  
